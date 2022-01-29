@@ -62,9 +62,9 @@ typedef st_data_t st_index_t;
 typedef int st_compare_func(st_data_t, st_data_t);
 typedef st_index_t st_hash_func(st_data_t);
 
-#ifndef __EMSCRIPTEN__
-typedef char st_check_for_sizeof_st_index_t[SIZEOF_VOIDP == (int)sizeof(st_index_t) ? 1 : -1];
-#endif
+//#ifndef __EMSCRIPTEN__
+//typedef char st_check_for_sizeof_st_index_t[SIZEOF_VOIDP == (int)sizeof(st_index_t) ? 1 : -1];
+//#endif
 
 #define SIZEOF_ST_INDEX_T SIZEOF_VOIDP
 
